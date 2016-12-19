@@ -1,0 +1,2 @@
+# Hotel-Web
+<!DOCTYPE html>
