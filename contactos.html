@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Instalacion</a></li>
+        <li><a href="#">Reservas</a></li>
+        <li class="active"><a href="#">Contactos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        
+        <h3>Nuestras redes sociales</h3>
+    <!-- link boton twitter https://about.twitter.com/es/resources/buttons#follow -->
+      <a href="https://twitter.com/hotel" class="twitter-follow-button" data-show-count="false">
+          Follow @hotel</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+          fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        
+         <!-- link boton facebook  https://www.taringa.net/post/hazlo-tu-mismo/14396517/Codigo-HTML-Para-Boton-Me-Gusta-De-Facebook.html -->
+        <p align="center"><iframe src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Hotel" 
+        scrolling="no" frameborder="0" 
+        style=border:none;width:200px;height:66px></iframe></p>
+      </div>
+      
+    <div class="col-sm-8 text-left"> 
+        <h3>Localización del hotel</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.9207406884443!2d2.450906314918433!3d39.53884197947689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12982753cc3d4fa5%3A0x91443eeafabf2db0!2sValentin+Reina+Paguera+(Only+Adults)!5e0!3m2!1ses!2ses!4v1483027813499" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <h3>Más contactos</h3>
+      <div>
+        <p>hotel@hotel.hotel</p>
+      </div>
+      <div>
+        <p>666666666</p>
+      </div>
+        <div>Envia tus sugerencias<input type="text" size="1000" name="comentario"/>
+<input id="pideal" type="button" value="enviar">
+       </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
