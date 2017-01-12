@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://momentjs.com/downloads/moment.min.js">
+
+function getEventTime(){
+var start1 = moment(document.getElementById("start").value).format();
+var end1 = moment(document.getElementById("end").value).format();
+    if (start1 < end1){
+        document.writeln("Fechas correctas");
+    }
+    else (start1 > end1){
+        document.writeln("Fechas incorrectas");
+    }
+}
+</script>
+</head>
+<body>
+    <form>
+<input type="date" id="start">
+<input type="date" id="end">
+<input type="datalist" list="Habitaciones">
+        <datalist id="Habitaciones">
+    <option value="Simple">
+    <option value="Doble">
+    <option value="Suite">
+    </datalist>
+<input type="button" onclick="getEventTime()" value="Comprobar">
+
+    </form>
+</body>
+</html>
